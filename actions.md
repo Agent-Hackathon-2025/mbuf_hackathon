@@ -40,18 +40,20 @@ The default list shown has Power Automate Flows and custom connectors available 
 ![Overview of the default configuration of the send an email action](media/actions_mailOverview.png)
 8. In the lower part of the action, you can configure what information is given to the action when executed (Inputs), and what information shall be given back to the agent after the execution (Outputs). For our example, we can leave the Outputs as they are, but need to adapt all the Inputs.
 
-        > [!Important]
-        > The value of action inputs can be set in two different ways:
-        > 1. **Set as value**: The value that is utilized by the action is set to a fixed value, which is static throughout all utilizations of that action and never changed.
-        > 2. **Dynamically fill with best option (default)**: This is the default option. Here, the value utilized by the action is dynamically / genereatively filled by the agent itself. This means this value can contain information generated from the agent, provided by the user etc. Therefore, also the expected information type can be changed in the **Identify as** field, e.g. so that it always will convert information into a date, email, boolean etc.
+> [!Important]
+> The value of action inputs can be set in two different ways:
+>
+> 1. **Set as value**: The value that is utilized by the action is set to a fixed value, which is static throughout all utilizations of that action and never changed.
+> 2. **Dynamically fill with best option (default)**: This is the default option. Here, the value utilized by the action is dynamically / genereatively filled by the agent itself. This means this value can contain information generated from the agent, provided by the user etc. Therefore, also the expected information type can be changed in the **Identify as** field, e.g. so that it always will convert information into a date, email, boolean etc.
+>
 
-9. For the Input “To”, click on Edit and change the filling mode (“How will the agent till this input?”) to “Set as value”, and enter the travel agents email address:
+1. For the Input “To”, click on Edit and change the filling mode (“How will the agent till this input?”) to “Set as value”, and enter the travel agents email address:
 \
 \
 ![Action Input configuration UI where "To" is set as value and email is entered](media/actions_mailTo.png)
-10. Similarly, change the Subject to “Set as value”, and enter a subject like “Travel Approval Request”.
-11. For the body, set it to “Dynamically fill with best option (default)” and change the description to “Fill with the created travel summary. Convert the format of the text into HTML.”
+1.  Similarly, change the Subject to “Set as value”, and enter a subject like “Travel Approval Request”.
+2.  For the body, set it to “Dynamically fill with best option (default)” and change the description to “Fill with the created travel summary. Convert the format of the text into HTML.”
 \
 \
 ![Action Input configuration UI where "Body" is set to be dynamically filled](media/actions_mailBody.png)
-12. When having this completed, click on **Add action** to save and enable this action for your agent.
+1.  When having this completed, click on **Add action** to save and enable this action for your agent.
