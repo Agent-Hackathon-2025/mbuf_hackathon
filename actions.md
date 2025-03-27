@@ -27,17 +27,17 @@ By default, actions return their information back to the agent, so that the agen
 The default list shown has Power Automate Flows and custom connectors available within your environment. This list includes commonly used prebuilt connectors and Bot Framework Skills that are registered with your agent.
 \
 \
-![Overview of availbale actions](media\actions_overview.png)
+![Overview of availbale actions](media/actions_overview.png)
 
 5. In this tutorial, we’re using the “Send an email” action from Office 365 Outlook. Search for it in the search box on the right hand side:
 \
 \
-![Filtered actions, with the "Send an email" action marked](media\actions_markedEmail.png)
+![Filtered actions, with the "Send an email" action marked](media/actions_markedEmail.png)
 6. Depending on the action, your connection is automatically configured, as it is in this example. Otherwise, follow the wizard's instructions to configure the connection. Once your connection is successfully configured, select **Next**.
 7. In the overview, the description of the action is used by the agent to know when to use this action. For our example, the default value of “This operation sends an email message.” works perfectly fine.
 \
 \
-![Overview of the default configuration of the send an email action](media\actions_mailOverview.png)
+![Overview of the default configuration of the send an email action](media/actions_mailOverview.png)
 8. In the lower part of the action, you can configure what information is given to the action when executed (Inputs), and what information shall be given back to the agent after the execution (Outputs). For our example, we can leave the Outputs as they are, but need to adapt all the Inputs.
 
     > [!Important]
@@ -48,10 +48,10 @@ The default list shown has Power Automate Flows and custom connectors available 
 9. For the Input “To”, click on Edit and change the filling mode (“How will the agent till this input?”) to “Set as value”, and enter the travel agents email address:
 \
 \
-![Action Input configuration UI where "To" is set as value and email is entered](media\actions_mailTo.png)
+![Action Input configuration UI where "To" is set as value and email is entered](media/actions_mailTo.png)
 10. Similarly, change the Subject to “Set as value”, and enter a subject like “Travel Approval Request”.
 11. For the body, set it to “Dynamically fill with best option (default)” and change the description to “Fill with the created travel summary. Convert the format of the text into HTML.”
 \
 \
-![Action Input configuration UI where "Body" is set to be dynamically filled](media\actions_mailBody.png)
+![Action Input configuration UI where "Body" is set to be dynamically filled](media/actions_mailBody.png)
 12. When having this completed, click on **Add action** to save and enable this action for your agent.
