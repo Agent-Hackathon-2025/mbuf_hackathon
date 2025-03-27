@@ -3,9 +3,6 @@
 
 You can extend the capabilities of your agent by adding one or more actions. Actions are used by your agent to respond to users.
 
-> [!Important]
-> This is a test message
-
 ## Mechanisms for adding actions
 
 There are different mechanisms available to you to add actions to your agent:
@@ -43,10 +40,10 @@ The default list shown has Power Automate Flows and custom connectors available 
 ![Overview of the default configuration of the send an email action](media/actions_mailOverview.png)
 8. In the lower part of the action, you can configure what information is given to the action when executed (Inputs), and what information shall be given back to the agent after the execution (Outputs). For our example, we can leave the Outputs as they are, but need to adapt all the Inputs.
 
-    > [!Important]
-    > The value of action inputs can be set in two different ways:
-    > 1. **Set as value**: The value that is utilized by the action is set to a fixed value, which is static throughout all utilizations of that action and never changed.
-    > 2. **Dynamically fill with best option (default)**: This is the default option. Here, the value utilized by the action is dynamically / genereatively filled by the agent itself. This means this value can contain information generated from the agent, provided by the user etc. Therefore, also the expected information type can be changed in the **Identify as** field, e.g. so that it always will convert information into a date, email, boolean etc.
+        > [!Important]
+        > The value of action inputs can be set in two different ways:
+        > 1. **Set as value**: The value that is utilized by the action is set to a fixed value, which is static throughout all utilizations of that action and never changed.
+        > 2. **Dynamically fill with best option (default)**: This is the default option. Here, the value utilized by the action is dynamically / genereatively filled by the agent itself. This means this value can contain information generated from the agent, provided by the user etc. Therefore, also the expected information type can be changed in the **Identify as** field, e.g. so that it always will convert information into a date, email, boolean etc.
 
 9. For the Input “To”, click on Edit and change the filling mode (“How will the agent till this input?”) to “Set as value”, and enter the travel agents email address:
 \
