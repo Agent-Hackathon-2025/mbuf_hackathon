@@ -47,13 +47,14 @@ The default list shown has Power Automate Flows and custom connectors available 
 > 2. **Dynamically fill with best option (default)**: This is the default option. Here, the value utilized by the action is dynamically / genereatively filled by the agent itself. This means this value can contain information generated from the agent, provided by the user etc. Therefore, also the expected information type can be changed in the **Identify as** field, e.g. so that it always will convert information into a date, email, boolean etc.
 >
 
-1. For the Input “To”, click on Edit and change the filling mode (“How will the agent till this input?”) to “Set as value”, and enter the travel agents email address:
+9. For the Input “To”, click on Edit and change the filling mode (“How will the agent till this input?”) to “Set as value”, and enter the travel agents email address:
 \
 \
 ![Action Input configuration UI where "To" is set as value and email is entered](media/actions_mailTo.png)
-1.  Similarly, change the Subject to “Set as value”, and enter a subject like “Travel Approval Request”.
-2.  For the body, set it to “Dynamically fill with best option (default)” and change the description to “Fill with the created travel summary. Convert the format of the text into HTML.”
+10. Similarly, change the Subject to “Set as value”, and enter a subject like “Travel Approval Request”.
+    
+11. For the body, set it to “Dynamically fill with best option (default)” and change the description to “Fill with the created travel summary. Convert the format of the text into HTML.”
 \
 \
 ![Action Input configuration UI where "Body" is set to be dynamically filled](media/actions_mailBody.png)
-1.  When having this completed, click on **Add action** to save and enable this action for your agent.
+12.  When having this completed, click on **Add action** to save and enable this action for your agent.
