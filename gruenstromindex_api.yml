@@ -91,11 +91,11 @@ definitions:
         type: string
       co2_g_standard:
         format: int32
-        description: show the CO2 emissions associated with standard and green power mixes, respectively.
+        description: show the CO2 emissions associated with standard power mix
         type: integer
       co2_g_oekostrom:
         format: int32
-        description: show the CO2 emissions associated with standard and green power mixes, respectively.
+        description: show the CO2 emissions associated with green power mix
         type: integer
       timeframe:
         description: 'Specifies the window of time the forecast covers.'
