@@ -30,32 +30,12 @@ The default list shown has Power Automate Flows and custom connectors available 
 \
 ![Overview of availbale actions](media/actions_overview.png)
 
-6. In this tutorial, we’re using the “Send an email” action from Office 365 Outlook. Search for it in the search box on the right hand side:
+6. In this tutorial, we’re using the “Get current” action from MSN Weather. Search for it in the search box on the right hand side:
 \
 \
-![Filtered actions, with the "Send an email" action marked](media/actions_markedEmail.png)
+![Filtered actions, with the "Send an email" action marked](media/weather_search.png)
 7. Depending on the action, your connection is automatically configured, as it is in this example. Otherwise, follow the wizard's instructions to configure the connection. Once your connection is successfully configured, select **Next**.
-8. In the overview, the description of the action is used by the agent to know when to use this action. For our example, the default value of “This operation sends an email message.” works perfectly fine.
+8. In the overview, the description of the action is used by the agent to know when to use this action. For our example, the default value of “Get the current weather for a location.” works perfectly fine. In the lower part of the action, you can configure what information is given to the action when executed (Inputs), and what information shall be given back to the agent after the execution (Outputs). We'll skip this for now, as for the weather agent the defaults work perfectly fine. Click on **Add action** to save and enable this action for your agent.
 \
 \
-![Overview of the default configuration of the send an email action](media/actions_mailOverview.png)
-9. In the lower part of the action, you can configure what information is given to the action when executed (Inputs), and what information shall be given back to the agent after the execution (Outputs). For our example, we can leave the Outputs as they are, but need to adapt all the Inputs.
-
-> [!Important]
-> The value of action inputs can be set in two different ways:
->
-> 1. **Set as value**: The value that is utilized by the action is set to a fixed value, which is static throughout all utilizations of that action and never changed.
-> 2. **Dynamically fill with best option (default)**: This is the default option. Here, the value utilized by the action is dynamically / genereatively filled by the agent itself. This means this value can contain information generated from the agent, provided by the user etc. Therefore, also the expected information type can be changed in the **Identify as** field, e.g. so that it always will convert information into a date, email, boolean etc.
->
-
-10. For the Input “To”, click on Edit and change the filling mode (“How will the agent till this input?”) to “Set as value”, and enter the travel agents email address:
-\
-\
-![Action Input configuration UI where "To" is set as value and email is entered](media/actions_mailTo.png)
-11. Similarly, change the Subject to “Set as value”, and enter a subject like “Travel Approval Request”.
-    
-12. For the body, set it to “Dynamically fill with best option (default)” and change the description to “Fill with the created travel summary. Convert the format of the text into HTML.”
-\
-\
-![Action Input configuration UI where "Body" is set to be dynamically filled](media/actions_mailBody.png)
-13. When having this completed, click on **Add action** to save and enable this action for your agent.
+![Action Input configuration UI where "Body" is set to be dynamically filled](media/weather_default.png)
