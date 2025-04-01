@@ -1,0 +1,254 @@
+swagger: '2.0'
+info:
+  title: GruenstromIndex
+  description: "Abruf des Green Smart Index (GSI) Zeitplans über die Corrently API."
+  version: 1.0.0
+host: api.corrently.io
+basePath: /
+schemes:
+  - https
+consumes: []
+produces: []
+paths:
+  /v2.0/gsi/prediction:
+    get:
+      summary: "Get GSI schedule"
+      description: "Get the GSI schedule for a specific location, identified by zip code, in Germany."
+      tags: 
+      - "GSI"
+      produces:
+      - application/json
+      operationId: "prediction"
+      parameters:
+      - name: zip
+        description: Zipcode (Postleitzahl) of a city/village in Germany.
+        in: query
+        type: integer
+        required: true
+      - name: token
+        description: Ignore this field.
+        in: query
+        type: string
+      responses:
+        '200':
+          description: "successful operation"
+          schema:
+            $ref: '#/definitions/GreenPowerIndex'
+
+definitions:
+  ForecastElement:
+    type: object
+    properties:
+      epochtime:
+        format: int32
+        description: 'Unix time for the forecast, helping to align it with real-time data.'
+        type: integer
+      eevalue:
+        format: int32
+        type: integer
+        description: Unused
+      ewind:
+        format: int32
+        description: breakdown of the wind power contribution
+        type: integer
+      esolar:
+        format: int32
+        description: breakdown of the solar power contribution
+        type: integer
+      ensolar:
+        format: int32
+        type: integer
+        description: unused
+      enwind:
+        format: int32
+        type: integer
+        description: unused
+      base:
+        format: int32
+        type: integer
+        description: unused
+      scaled:
+        type: boolean
+        description: unused
+      scale:
+        format: double
+        description: Scaling factor applied to the energy values.
+        type: number
+      gsi:
+        format: int32
+        description: GruenstromIndex score indicating renewable energy levels. (values between 0-100)
+        type: integer
+      sci:
+        format: int32
+        type: integer
+        description: unused
+      timeStamp:
+        format: int32
+        description: Timestamp of the forecast in milliseconds since epoch.
+        type: integer
+      energyprice:
+        description: Location dispatched Energy price per kWh in EUR.
+        type: string
+      co2_g_standard:
+        format: int32
+        description: show the CO2 emissions associated with standard and green power mixes, respectively.
+        type: integer
+      co2_g_oekostrom:
+        format: int32
+        description: show the CO2 emissions associated with standard and green power mixes, respectively.
+        type: integer
+      timeframe:
+        description: 'Specifies the window of time the forecast covers.'
+        type: object
+        properties:
+          start:
+            format: int32
+            type: integer
+            description: Start timestamp of the forecast period, in milliseconds since epoch.
+          end:
+            format: int32
+            type: integer
+            description: End timestamp of the forecast period, in milliseconds since epoch.
+      iat:
+        format: int32
+        description: Issued at timestamp, indicating when the forecast was generated, in seconds.
+        type: integer
+      zip:
+        description: ZIP code for the location of the forecast.
+        type: string
+      signature:
+        description: A cryptographic signature to ensure the data's authenticity. Signee is STROMDAO GmbH.
+        type: string
+    example:
+      epochtime: 1728856800
+      eevalue: 49
+      ewind: 4
+      esolar: 0
+      ensolar: 0
+      enwind: 4
+      base: 48
+      scaled: true
+      scale: 0.6122448979591837
+      gsi: 49
+      sci: 25
+      timeStamp: 1728856800000
+      energyprice: '-0.0245000'
+      co2_g_standard: 183
+      co2_g_oekostrom: 36
+      timeframe:
+        start: 1728856800000
+        end: 1728860400000
+      iat: 1728854953758
+      zip: '69256'
+      signature: 0x55aa8c7424c3792e2e6c8340cf35a9b34addf2494b16d7d3ad6adfaff777acab0b7f91e115c0c1caab183f06a56fa6151125aa0964f27f7699d755d56e8c88451c
+  GreenPowerIndex:
+    title: Root Type for GreenPowerIndex
+    type: object
+    properties:
+      support:
+        type: string
+        description: Contact information for support, including email and website.
+      info:
+        type: string
+        description: URL to the information page about the API or service.
+      documentation:
+        type: string
+        description: URL to the documentation page for the API or service.
+      commercial:
+        type: string
+        description: URL to the commercial page for the API or service, possibly for premium features or services.
+      signee:
+        description: Public key or identifier of the entity signing the document, used to verify data integrity.
+        type: string
+      forecast:
+        description: 'A collection of hourly forecasts represented by ForecastElement objects.'
+        type: array
+        items:
+          $ref: '#/definitions/ForecastElement'
+      location:
+        description: ZIP code and city for the forecast, with a digital signature for data integrity.
+        type: object
+        properties:
+          zip:
+            type: string
+            description: ZIP code for the location of the forecast.
+          city:
+            type: string
+            description: City name for the location of the forecast.
+          signature:
+            type: string
+            description: A cryptographic signature to ensure the data's authenticity.
+      provisioning:
+        description: Information about the data source and the licensing under which the forecast is provided.
+        type: object
+        properties:
+          source:
+            type: string
+            description: Source of the data, such as the service or API used to obtain it.
+          license:
+            type: string
+            description: License under which the data is provided, including a link to the full license text.
+    example:
+      support: "If you have any question please contact dev@stromdao.com or visit https://premium.corrently.de/"
+      info: https://corrently.io/books/stromdao-gmbh/page/fair-use-policy
+      documentation: https://corrently.io/books/grunstromindex
+      commercial: https://corrently.energy/products/corrently-apis-rate-limit-erhohung
+      signee: '0xE7Fe0626D7B8e3F2e5ECD146F9b11daac1DBE447'
+      forecast:
+        - epochtime: 1729112400
+          eevalue: 50
+          ewind: 6
+          esolar: 0
+          ensolar: 0
+          enwind: 6
+          base: 50
+          scaled: true
+          scale: 0.6122448979591837
+          gsi: 50
+          sci: 25
+          timeStamp: 1729112400000
+          energyprice: '-0.0250000'
+          co2_g_standard: 180
+          co2_g_oekostrom: 35
+          timeframe:
+            start: 1729112400000
+            end: 1729116000000
+          iat: 1728854953943
+          zip: '69256'
+          signature: 0x046678c66330ed5b6bc0fbb9bc9ec175522ada9744d8c9e41ce1efed5cea8b3a0fbf7b743365925c0fcb01b6af6b58e57bae80d93235730741122fbe441cd4951b
+        - epochtime: 1729116000
+          eevalue: 49
+          ewind: 5
+          esolar: 0
+          ensolar: 0
+          enwind: 5
+          base: 49
+          scaled: true
+          scale: 0.6122448979591837
+          gsi: 49
+          sci: 25
+          timeStamp: 1729116000000
+          energyprice: '-0.0245000'
+          co2_g_standard: 183
+          co2_g_oekostrom: 36
+          timeframe:
+            start: 1729116000000
+            end: 1729119600000
+          iat: 1728854953946
+          zip: '69256'
+          signature: 0x17205ff2ae340c036831d79a189e6a1adf94b5b09ad61b1e9a3f6cb5be6655d007b08f8cbc353a34556750ff327848b1aa87c760ddfcd7df452d0c7c8146aedf1b
+      location:
+        zip: '69256'
+        city: Mauer
+        signature: 0xa214a77070775ed2ade9d3999ba48815a18ab1f98d9dc70b7bfce4ca3598c2ef1b9594d90e07a7c8c3d57dc8ce864fe84dcc2ae6ec21ffab776f39b5de3411d61b
+      provisioning:
+        source: CloudFlare-IP
+        license: >-
+          CC BY-NC-SA 4.0 (
+          https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.en )
+parameters: {}
+responses: {}
+securityDefinitions: {}
+security: []
+tags: []
+x-components: {}
