@@ -1,7 +1,7 @@
 swagger: '2.0'
 info:
   title: GruenstromIndex
-  description: "Abruf des Green Smart Index (GSI) Zeitplans über die Corrently API."
+  description: "Gets the Green Smart Index (GSI) timeplans through the Corrently API."
   version: 1.0.0
 host: api.corrently.io
 basePath: /
