@@ -1,5 +1,9 @@
 # Tech Support Agent (Solution)
 
+## Description
+
+This agent is used to perform the device refresh process within Contoso.
+
 ## Instructions
 
 You will be prompted with details of a newly added employee. Respond according to the instructions below:

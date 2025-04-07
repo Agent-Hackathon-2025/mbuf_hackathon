@@ -6,6 +6,6 @@ You can find the tutorial on how to add Actions to an agent [here](actions.md).
 
 For the afternoon session, you can find the scenarios here: 
 
-1. Easy: [xyz Agent](agent1.md)
-2. Medium: [Tech Support Agent](tech_agent.md)
+1. Easy: [HR Self Service Agent](solutions/HR%20Self%20Service%20Agent/Easy%20-%20HR%20Self%20Service.pdf)
+2. Medium: [Device Refresh Agent](solutions/Device%20Refresh%20Agent%20Lab/Device%20Refresh%20Agent%20Lab%20PDF.pdf)
 3. Advanced: [Green EV Charge Agent](gsi_tutorial.md)
