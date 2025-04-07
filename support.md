@@ -5,6 +5,7 @@ Learn how to write effective instructions for your declarative agent.
 ```
 
 SPO URLs:
+
 https://m365cpi12260787.sharepoint.com/sites/HR/Shared%20Documents/Forms/AllItems.aspx
 
 https://m365cpi85140395.sharepoint.com/sites/HR/Freigegebene%20Dokumente/Forms/AllItems.aspx
