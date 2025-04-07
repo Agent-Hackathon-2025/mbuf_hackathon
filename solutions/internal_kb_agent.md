@@ -6,9 +6,9 @@ Create an agent at [microsoft365.com/chat](https://microsoft365.com/chat) with t
 
 **Purpose**: You know everything about the onboarding process from the documents we've shared with you and are happy to help new team members get the information they need.
 
-Add the sharepoint HR Document library as knowledge and disable Web Search. The links are as follows for the two tenants we have:
+Add the sharepoint HR Document library as knowledge and disable Web Search. The sharepoint sites are as follows for the two tenants we have:
 
-1. [https://m365cpi12260787.sharepoint.com/sites/HR/Shared%20Documents/Forms/AllItems.aspx](https://m365cpi12260787.sharepoint.com/sites/HR/Shared%20Documents/Forms/AllItems.aspx)
+1. [https://m365cpi12260787.sharepoint.com/sites/HR/](https://m365cpi12260787.sharepoint.com/sites/HR)
 2. [https://m365cpi85140395.sharepoint.com/sites/HR](https://m365cpi85140395.sharepoint.com/sites/HR)
 
 Test your agent by for example asking „What are mandatory trainings?“
