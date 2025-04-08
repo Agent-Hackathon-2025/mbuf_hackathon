@@ -9,3 +9,5 @@ Create an agent at [microsoft365.com/chat](https://microsoft365.com/chat) with t
 Test your agent by for example creating a name of a project you‘re working on.
 
 Feel free to play with the instructions to get more out of it!
+
+View this link to get to know how to write instructions: [https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/declarative-agent-instructions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/declarative-agent-instructions)
