@@ -6,7 +6,7 @@ For the exercises in the morning, if you want to copy & paste some stuff, we inc
 
 1. [Name It Agent](solutions/name_it_agent.md)
 2. [Internal Knowledge Agent](solutions/internal_kb_agent.md)
-3. [Weather Action Agent](weather_actions.md).
+3. [Weather Action Agent](weather_actions.md)
 
 For the afternoon session, you can find the scenarios here:
 

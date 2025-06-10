@@ -8,8 +8,8 @@ Create an agent at [microsoft365.com/chat](https://microsoft365.com/chat) with t
 
 Add the sharepoint HR Document library as knowledge and disable Web Search. The sharepoint sites are as follows for the two tenants we have:
 
-1. [https://m365cpi12260787.sharepoint.com/sites/HR/](https://m365cpi12260787.sharepoint.com/sites/HR)
-2. [https://m365cpi85140395.sharepoint.com/sites/HR](https://m365cpi85140395.sharepoint.com/sites/HR)
+1. [https://m365cpi12260787.sharepoint.com/sites/HR/](https://m365cpi94048833.sharepoint.com/sites/allcompany)
+2. [https://m365cpi85140395.sharepoint.com/sites/HR](https://m365cpi85140395.sharepoint.com/sites/allcompany)
 
 Test your agent by for example asking „What are mandatory trainings?“
 
