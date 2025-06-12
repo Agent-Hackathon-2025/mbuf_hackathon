@@ -16,4 +16,6 @@ For the afternoon session, you can find the scenarios here:
 
 ## Additional resources
 
-[Bing Search Terms](bing_search_terms.md)
+[🧠 How to write effective instructions](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/declarative-agent-instructions)
+
+[💻 Bing Search Terms](bing_search_terms.md)
