@@ -39,3 +39,5 @@ The default list shown has Power Automate Flows and custom connectors available 
 \
 \
 ![Action Input configuration UI where "Body" is set to be dynamically filled](media/Weather3.png)
+
+![Action Input configuration UI where "Body" is set to be dynamically filled](media/Weather4.png)
