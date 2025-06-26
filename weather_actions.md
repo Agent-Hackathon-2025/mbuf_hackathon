@@ -30,12 +30,12 @@ The default list shown has Power Automate Flows and custom connectors available 
 \
 ![Overview of available actions](media/actions_overview.png)
 
-6. In this tutorial, we’re using the “Get current weather” action from MSN Weather. Search for it in the search box on the right hand side:
+6. In this tutorial, we’re using the “Get current weather” tool from MSN Weather. Search for it in the search box on the right hand side:
 \
 \
 ![Filtered actions, with the "Send an email" action marked](media/weather_search.png)
-7. Depending on the action, your connection is automatically configured, as it is in this example. Otherwise, follow the wizard's instructions to configure the connection. Once your connection is successfully configured, select **Next**.
-8. In the overview, the description of the action is used by the agent to know when to use this action. For our example, the default value of “Get the current weather for a location.” works perfectly fine. In the lower part of the action, you can configure what information is given to the action when executed (Inputs), and what information shall be given back to the agent after the execution (Outputs). We'll skip this for now, as for the weather agent the defaults work perfectly fine. Click on **Add action** to save and enable this action for your agent.
+7. Depending on the tool, your connection is automatically configured, as it is in this example. Otherwise, follow the wizard's instructions to configure the connection. Once your connection is successfully configured, select **Add to agent**.
+8. In the overview, the description of the tool is used by the agent to know when to use this action. For our example, the default value of “Get the current weather for a location.” works perfectly fine. In the configuration part of the tool, you can configure what information is given to the action when executed (Inputs), and what information shall be given back to the agent after the execution (Outputs). We'll skip this for now, as for the weather agent the defaults work perfectly fine. 
 \
 \
 ![Action Input configuration UI where "Body" is set to be dynamically filled](media/weather_default.png)
