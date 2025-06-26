@@ -21,16 +21,16 @@ By default, actions return their information back to the agent, so that the agen
 
 1. Go into declarative Agents by choosing **Agents** in the left hand navigation pane and select **Copilot for Microsoft 365**
 2. Open your agent from the list or create a new one by clicking **+Add** (If you create a new one, you have to enter the first draft of you instructions and descriptions and click on **Create** once to be able to add actions.)
-3. Scroll down to **Actions** to view actions for the agent.
-4. Select **Add action**
-5. In the **Choose an action** wizard, search for an action you want to use and select it.  
+3. Scroll down to **Tools** to view actions for the agent.
+4. Select **Add tool**
+5. In the **Search for a tool** wizard, search for an action you want to use and select it.  
 \
 The default list shown has Power Automate Flows and custom connectors available within your environment. This list includes commonly used prebuilt connectors and Bot Framework Skills that are registered with your agent.
 \
 \
-![Overview of availbale actions](media/actions_overview.png)
+![Overview of available actions](media/actions_overview.png)
 
-6. In this tutorial, we’re using the “Get current” action from MSN Weather. Search for it in the search box on the right hand side:
+6. In this tutorial, we’re using the “Get current weather” action from MSN Weather. Search for it in the search box on the right hand side:
 \
 \
 ![Filtered actions, with the "Send an email" action marked](media/weather_search.png)
