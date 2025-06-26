@@ -1,21 +1,21 @@
 
-# Use actions with custom agents (preview)
+# Use tools (formerly called actions) with custom agents (preview)
 
-You can extend the capabilities of your agent by adding one or more actions. Actions are used by your agent to respond to users.
+You can extend the capabilities of your agent by adding one or more tools, formerly known as actions. Tools are used by your agent to respond to users.
 
-## Mechanisms for adding actions
+## Mechanisms for adding tools
 
-There are different mechanisms available to you to add actions to your agent:
+There are different mechanisms available to you to add tools to your agent:
 
-- Prebuilt connector and custom connector: Connect to a service or system and enable specific actions.
-- Flow: Define a flow, including triggers as needed, and one or more actions to be carried out by the flow.
+- Prebuilt connector and custom connector: Connect to a service or system and enable specific tools.
+- Flow: Define a flow, including triggers as needed, and one or more tools to be carried out by the flow.
 - AI Builder prompts (within a topic)
-- Bot Framework skill: Container for a set of related actions.
-- REST API connection: Define a connection to a REST API, and select one or more API endpoints and methods to add as actions.
+- Bot Framework skill: Container for a set of related tools.
+- REST API connection: Define a connection to a REST API, and select one or more API endpoints and methods to add as tools.
 - Model Context Protocol action: Connect to an MCP server to access tools.
 
-When you define an action in Copilot Studio, you also provide information that describes its purpose. This information allows the agent to identify when to use the action and also use generative AI to generate questions. These questions are used to gather information to fill the inputs needed to perform the action. As a result, you don't need to manually author question nodes to gather all inputs needed, such as inputs in a flow. Input collection is handled for you at runtime.
-By default, actions return their information back to the agent, so that the agent can generate a contextual response to the user's query. Alternatively, you can instruct your action to always respond immediately, either generating a message or authoring an explicit message.
+When you define a tool in Copilot Studio, you also provide information that describes its purpose. This information allows the agent to identify when to use the tool and also use generative AI to generate questions. These questions are used to gather information to fill the inputs needed to perform the action of the tool. As a result, you don't need to manually author question nodes to gather all inputs needed, such as inputs in a flow. Input collection is handled for you at runtime.
+By default, tools return their information back to the agent, so that the agent can generate a contextual response to the user's query. Alternatively, you can instruct your tool to always respond immediately, either generating a message or authoring an explicit message.
 
 ## Add an action/tool
 
