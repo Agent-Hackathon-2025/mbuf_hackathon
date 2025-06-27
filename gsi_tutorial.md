@@ -18,23 +18,24 @@ In general, the agent should, when prompted with the question to look for a char
 
 As a guidance, these steps are required to add an API action:
 
-1. When having the declarative agent open, click on **+ Add action**
-2. In the dropdown for **+ New action**, select **New REST API**:
+1. When having the declarative agent open, click on **+ Add tool**
+2. In the dropdown for **+ New tool**, select **REST API**:
 \
 \
-![Add a REST API Action](media/gsi_addApi.png)
-3. In the new pop-up, click on the banner to upload an API description file, which is stored in this repository under [gruenstromindex_api.yml](gruenstromindex_api.yml).
-4. After the file was parsed, enter a name for this API action to later find it again. **Please use an Action name including your user**, as multiple of these adapters will be created. You can leave the **Solution** empty.
+![Add a REST API Action](media/gsi1.png)
+![Add a REST API Action](media/gsi2.png)
+4. In the new pop-up, click on the banner to upload an API description file, which is stored in this repository under [gruenstromindex_api.yml](gruenstromindex_api.yml).
+5. After the file was parsed, enter a name for this API tool to later find it again. **Please use a tool name including your user**, as multiple of these adapters will be created. You can leave the **Solution** empty.
 \
 \
-![API action overview](media/gsi_apidetails.png)
-5. When asked for the authentication, leave everything as **None**, as the GSI API doesn't require any authentication
-6. As this API description only offers one endpoint, select the **Get GSI schedule** action. You can leave the default values as they are.
+![API action overview](media/gsi3.png)
+![API action overview](media/gsi4.png)
+7. When asked for the authentication, leave everything as **None**, as the GSI API doesn't require any authentication
+8. As this API description only offers one endpoint, select the **Get GSI schedule** action. You can leave the default values as they are.
 \
 \
-![Action overview](media/gsi_actionOverview.png)
-7. Next, you get an overview of all input and output parameters of the API. Review them to understand all fields. These manadatory descriptions are used to explain each and every field to the agent. As they are already prefilled from the API description, you can leave them and continue with the dialogue.
-8. Afterwards, you'll be brought back to the **Select Actions** view. As the API only promotes one actions, you can finish the dialogue by pressing **Save and Close**:
+9. Next, you get an overview of all input and output parameters of the API. Review them to understand all fields. These manadatory descriptions are used to explain each and every field to the agent. As they are already prefilled from the API description, you can leave them and continue with the dialogue.
+10. Afterwards, you'll be brought back to the **Select Actions** view. As the API only promotes one actions, you can finish the dialogue by pressing **Save and Close**:
 \
 \
-![Save dialogue](media/gsi_save.png)
+![Action overview](media/gsi5.png)
