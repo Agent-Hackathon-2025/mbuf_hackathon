@@ -22,14 +22,14 @@ As a guidance, these steps are required to add an API action:
 2. In the dropdown for **+ New tool**, select **REST API**:
 \
 \
-![Add a REST API Action](media/gsi1.png)
-![Add a REST API Action](media/gsi2.png)
+![Add a REST API Action](media/GSI1.png)
+![Add a REST API Action](media/GSI2.png)
 4. In the new pop-up, click on the banner to upload an API description file, which is stored in this repository under [gruenstromindex_api.yml](gruenstromindex_api.yml).
 5. After the file was parsed, enter a name for this API tool to later find it again. **Please use a tool name including your user**, as multiple of these adapters will be created. You can leave the **Solution** empty.
 \
 \
-![API action overview](media/gsi3.png)
-![API action overview](media/gsi4.png)
+![API action overview](media/GSI3.png)
+![API action overview](media/GSI4.png)
 7. When asked for the authentication, leave everything as **None**, as the GSI API doesn't require any authentication
 8. As this API description only offers one endpoint, select the **Get GSI schedule** action. You can leave the default values as they are.
 \
@@ -38,4 +38,4 @@ As a guidance, these steps are required to add an API action:
 10. Afterwards, you'll be brought back to the **Select Actions** view. As the API only promotes one actions, you can finish the dialogue by pressing **Save and Close**:
 \
 \
-![Action overview](media/gsi5.png)
+![Action overview](media/GSI5.png)
