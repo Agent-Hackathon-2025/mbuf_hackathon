@@ -18,18 +18,17 @@ In general, the agent should, when prompted with the question to look for a char
 
 As a guidance, these steps are required to add an API action:
 
-1. When having the declarative agent open, click on **+ Add tool**
+1. When having the declarative agent open, click on **+ New tool**
+![Add a REST API Action](media/GSI1.png)
 2. In the dropdown for **+ New tool**, select **REST API**:
 \
-\
-![Add a REST API Action](media/GSI1.png)
-
-4. In the new pop-up, click on the banner to upload an API description file, which is stored in this repository under [gruenstromindex_api.yml](gruenstromindex_api.yml).
 ![Add a REST API Action](media/GSI2.png)
+\
+4. In the new pop-up, click on the banner to upload an API description file, which is stored in this repository under [gruenstromindex_api.yml](gruenstromindex_api.yml).
+![API action overview](media/GSI3.png)
 6. After the file was parsed, enter a name for this API tool to later find it again. **Please use a tool name including your user**, as multiple of these adapters will be created. You can leave the **Solution** empty.
 \
 \
-![API action overview](media/GSI3.png)
 ![API action overview](media/GSI4.png)
 7. When asked for the authentication, leave everything as **None**, as the GSI API doesn't require any authentication
 8. As this API description only offers one endpoint, select the **Get GSI schedule** action. You can leave the default values as they are.
