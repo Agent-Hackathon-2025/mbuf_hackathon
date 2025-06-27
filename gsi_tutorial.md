@@ -23,9 +23,10 @@ As a guidance, these steps are required to add an API action:
 \
 \
 ![Add a REST API Action](media/GSI1.png)
-![Add a REST API Action](media/GSI2.png)
+
 4. In the new pop-up, click on the banner to upload an API description file, which is stored in this repository under [gruenstromindex_api.yml](gruenstromindex_api.yml).
-5. After the file was parsed, enter a name for this API tool to later find it again. **Please use a tool name including your user**, as multiple of these adapters will be created. You can leave the **Solution** empty.
+![Add a REST API Action](media/GSI2.png)
+6. After the file was parsed, enter a name for this API tool to later find it again. **Please use a tool name including your user**, as multiple of these adapters will be created. You can leave the **Solution** empty.
 \
 \
 ![API action overview](media/GSI3.png)
