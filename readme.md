@@ -11,7 +11,7 @@ For the exercises in the morning, if you want to copy & paste some stuff, we inc
 For the afternoon session, you can find the scenarios here:
 
 1. Easy: [HR Self Service Agent](solutions/HR%20Self%20Service%20Agent/HR%20Function%20Agent_June2025.pdf)
-2. Medium: [Device Refresh Agent](solutions/Device%20Refresh%20Agent%20Lab/Device%20Refresh%20Agent%20Lab%20PDF.pdf)
+2. Medium: [Device Refresh Agent](solutions/Device%20Refresh%20Agent%20Lab/DeviceRefreshAgentLab_June25.pdf)
 3. Advanced: [Green EV Charge Agent](gsi_tutorial.md)
 
 ## Additional resources
