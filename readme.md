@@ -20,5 +20,5 @@ For the afternoon session, you can find the scenarios here:
 
 [💻 Bing Search Terms](bing_search_terms.md)
 
-[Governance resources](https://adoption.microsoft.com/files/copilot-studio/Agent-governance-whitepaper.pdf)
-(https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide)
+[Governance whitepaper](https://adoption.microsoft.com/files/copilot-studio/Agent-governance-whitepaper.pdf)
+[Governance resources](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide)
