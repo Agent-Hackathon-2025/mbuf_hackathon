@@ -12,7 +12,7 @@ For the afternoon session, you can find the scenarios here:
 
 1. Easy: [HR Self Service Agent](solutions/HR%20Self%20Service%20Agent/HR%20Function%20Agent_June2025.pdf)
 2. Medium: [Device Refresh Agent](solutions/Device%20Refresh%20Agent%20Lab/DeviceRefreshAgentLab_June25.pdf)
-3. Advanced: [Green EV Charge Agent](gsi_tutorial.md)
+3. Advanced: [ServiceNow Agent](solutions/CopilotStudioAnleitungHackathon.pdf)
 
 ## Additional resources
 
@@ -21,4 +21,5 @@ For the afternoon session, you can find the scenarios here:
 [💻 Bing Search Terms](bing_search_terms.md)
 
 [Governance whitepaper](https://adoption.microsoft.com/files/copilot-studio/Agent-governance-whitepaper.pdf)
-[Governance resources](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide)
+
+[Management resources](https://learn.microsoft.com/en-us/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide)
